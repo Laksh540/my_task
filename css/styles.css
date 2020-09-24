@@ -1,0 +1,125 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(../banner.jpg);
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header h2 {
+  position: absolute;
+  color: #333333;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 1% 0;
+  text-align: center;
+}
+
+.main-content {
+  padding: 20px;
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #333333;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 7px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  flex: none;
+  display: block;
+  width: 95px;
+  font-weight: bold;
+  font-size: 1em;
+}
+.form-group label.right-inline {
+  text-align: right;
+  padding-right: 8px;
+  padding-left: 10px;
+}
+
+.form-group .input-control {
+  flex: 1 1 auto;
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 8px;
+  padding: 4px;
+  margin-top: -4px;
+}
+.main-content h2 {
+  margin-top: 0;
+  margin-bottom: 55px;
+}
+button {
+  padding: 8px;
+  font-weight: 600;
+  font-size: 1em;
+  min-width: 83px;
+  background-color: #333333;
+  margin-right: 8px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1% 0;
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+  color: #333333;
+}
+footer p {
+  margin: 0;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .main-content {
+    width: 614px;
+    padding: 20px 8px;
+  }
+  button {
+    margin-left: 2px;
+  }
+}
+@media (max-width: 652px) {
+  .main-content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .form-group {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .form-group .input-control {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .form-group label.right-inline {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .main-content {
+    width: 200px !important;
+    padding: 20px 8px !important;
+  }
+  button {
+    margin-top: 25px;
+  }
+}
